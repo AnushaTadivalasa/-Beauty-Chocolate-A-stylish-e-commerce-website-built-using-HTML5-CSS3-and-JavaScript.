@@ -1,0 +1,363 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Backgrounds */
+body {
+  color: #fff;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Page Backgrounds */
+.login-page {
+  background-image: url('https://www.shutterstock.com/image-photo/funny-messy-baby-girl-eating-600nw-2323132749.jpg');
+}
+.beauty-page {
+  background-image: url('https://wallpapercave.com/wp/wp7788524.jpg');
+}
+.chocolates-page {
+  background-image: url('https://png.pngtree.com/background/20230412/original/pngtree-chocolate-delicious-dark-chocolate-background-picture-image_2401694.jpg');
+}
+.wishlist-page {
+  background-image: url('https://img.freepik.com/premium-vector/happy-cute-kid-girl-holding-balloon-text-cartoon-vector-illustration_1323048-11738.jpg')
+}
+.thankyou-page {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/026/794/812/non_2x/american-business-male-people-shaking-hands-skyscrapers-in-the-background-free-photo.jpg');
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.main-nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  background: #e4007c ;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.main-nav a:hover {
+  background: #ec407a;
+}
+
+/* Login Title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px 0 10px;
+  color: #dc143c ;
+  text-shadow: 2px 2px #880e4f;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Navigation Buttons */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  background: #ff4081;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: #c51162;
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 25px 30px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+  animation: slideInUp 0.8s ease;
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #ad1457;
+  margin-bottom: 20px;
+}
+
+.form-box input,
+.form-box select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #f06292;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+  outline: none;
+  border-color: #ec407a;
+  box-shadow: 0 0 8px #ec407a88;
+}
+
+.form-box button {
+  width: 100%;
+  background: linear-gradient(to right, #ec407a, #c2185b);
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.form-box button:hover {
+  background: linear-gradient(to right, #d81b60, #880e4f);
+  box-shadow: 0 0 12px #ec407a;
+}
+
+.welcome-msg {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffebee;
+  font-weight: bold;
+  animation: fadeIn 1s ease;
+}
+
+/* Product Cards Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-radius: 16px;
+  padding: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.product-card select,
+.product-card input[type="file"] {
+  margin: 5px 0;
+  padding: 4px;
+  width: 90%;
+  font-size: 0.9rem;
+}
+
+.product-card button {
+  background-color: #8e24aa;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  margin: 5px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #6a1b9a;
+}
+
+/* Wishlist Section */
+.wishlist-section {
+  padding: 30px;
+}
+
+.wishlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cart Review Section */
+.cart-review {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  margin: auto;
+  border-radius: 16px;
+}
+
+.cart-review h2, .cart-review h3, .cart-review p {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.cart-review form {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.cart-review label {
+  display: block;
+  margin: 8px 0;
+}
+
+.cart-review button {
+  background: #43a047;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cart-review button:hover {
+  background: #2e7d32;
+}
+
+/* Confirmation Message */
+#confirmationMessage {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#confirmationMessage.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* 🎉 Confetti Animation */
+@keyframes confetti {
+  0%   { transform: translateY(0) rotate(0); opacity: 1; }
+  100% { transform: translateY(300px) rotate(720deg); opacity: 0; }
+}
+.confetti {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  font-size: 2rem;
+  pointer-events: none;
+  animation: confetti 1s ease-out forwards;
+  z-index: 9999;
+}
+
+/* 💖 Heart Animation */
+@keyframes floatHeart {
+  0%   { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
+}
+.heart {
+  position: fixed;
+  color: #e91e63;
+  font-size: 2rem;
+  animation: floatHeart 1s ease-out forwards;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeInDown {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .product-card {
+    width: 90%;
+  }
+
+  .form-box {
+    width: 90%;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+  }
+
+  .main-nav a {
+    margin: 5px;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Wishlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="wishlist-page">
+  <header>
+    <h1>📝 My Wishlist</h1>
+    <nav class="main-nav">
+      <a href="login.html">Home</a>
+      <a href="beauty.html">Beauty Products</a>
+      <a href="chocolates.html">Chocolates</a>
+      <a href="thankyou.html">Transactions</a>
+    </nav>
+  </header>
+
+  <section class="wishlist-section">
+    <div id="wishlistItems" class="wishlist-grid">
+      <!-- Wishlist items will be added here dynamically -->
+    </div>
+
+    <!-- Optional Reset Button -->
+    <div style="text-align:center; margin-top: 20px;">
+      <button onclick="clearWishlist()" style="background-color: red; color: white; padding: 10px 15px; border: none; border-radius: 5px;">
+        🔁 Clear Wishlist (Reset)
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Beauty & Chocolate Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Only for wishlist.html
+    function clearWishlist() {
+      localStorage.removeItem("wishlist");
+      alert("Wishlist cleared.");
+      location.reload();
+    }
+  </script>
+</body>
+</html>

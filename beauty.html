@@ -1,0 +1,141 @@
+<!-- beauty.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beauty Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="beauty-page">
+  <header>
+    <h1>Beauty Products 🧴✨</h1>
+    <nav class="main-nav">
+      <a href="login.html">Home</a>
+      <a href="chocolates.html">Chocolates</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="thankyou.html">Transactions</a>
+    </nav>
+  </header>
+
+  <section class="product-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="https://lh3.googleusercontent.com/proxy/nKHLESEJQtwXyYBHsWoxno1sdE34gIYYhb0WjspCaC4UbUPTs5hb4hBmHs9YzjWKbp6QJNb4AgiYwA226HrXqJWrPy48a5k24lV-oHiUQK3S3A=s0-d" alt="Face Cream" />
+      <h2>Glowing Face Cream</h2>
+      <p>🌟 Rating: 4.5/5</p>
+      <p>Price: ₹399</p>
+      <p>Ingredients: Aloe Vera, Vitamin C</p>
+      <button onclick="addToWishlist('Glowing Face Cream')">Add to Wishlist</button>
+      <button onclick="addToCart('Glowing Face Cream')">Add to Cart</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/1408/1408/j30gvbk0-1/lipstick/y/2/9/4-7-enrich-matte-lipstick-lakme-original-imaeu8w3cp9uy7hr.jpeg?q=90" alt="Lipstick" />
+      <h2>Matte Lipstick</h2>
+      <p>🌟 Rating: 4.7/5</p>
+      <p>Price: ₹299</p>
+      <p>Ingredients: Shea Butter, Vitamin E</p>
+      <button onclick="addToWishlist('Matte Lipstick')">Add to Wishlist</button>
+      <button onclick="addToCart('Matte Lipstick')">Add to Cart</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="https://cdn.shopify.com/s/files/1/2489/3542/products/de-organic-facial-wash-alt1-2000x2000.jpg?v=1609871623" alt="Face Wash" />
+      <h2>Herbal Face Wash</h2>
+      <p>🌟 Rating: 4.3/5</p>
+      <p>Price: ₹199</p>
+      <p>Ingredients: Neem, Lemon</p>
+      <button onclick="addToWishlist('Herbal Face Wash')">Add to Wishlist</button>
+      <button onclick="addToCart('Herbal Face Wash')">Add to Cart</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="https://i.pinimg.com/736x/1b/14/eb/1b14eb6e064707cd12e54586a82e0058.jpg" alt="Kajal" />
+      <h2>Waterproof Kajal</h2>
+      <p>🌟 Rating: 4.6/5</p>
+      <p>Price: ₹150</p>
+      <p>Ingredients: Castor Oil, Beeswax</p>
+      <button onclick="addToWishlist('Waterproof Kajal')">Add to Wishlist</button>
+      <button onclick="addToCart('Waterproof Kajal')">Add to Cart</button>
+    </div>
+    <!-- Product 5 -->
+<div class="product-card">
+  <img src="https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFoOHpXdkcyREwuX1NMMTUwMF8uanBn.jpg" alt="Makeup Kit" />
+  <h2>All-in-One Makeup Kit</h2>
+  <p>🌟 Rating: 4.8/5</p>
+  <p>Price: ₹799</p>
+  <p>Includes: Lipsticks, Eyeshadow, Compact, Brushes</p>
+  <button onclick="addToWishlist('All-in-One Makeup Kit')">Add to Wishlist</button>
+  <button onclick="addToCart('All-in-One Makeup Kit')">Add to Cart</button>
+</div>
+
+<!-- Product 6 -->
+<div class="product-card">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/61bRvqR1CML._SL1001_.jpg" alt="Under Eye Pads" />
+  <h2>Cooling Eye Pads</h2>
+  <p>🌟 Rating: 4.5/5</p>
+  <p>Price: ₹250</p>
+  <p>Ingredients: Aloe Vera, Green Tea Extract</p>
+  <button onclick="addToWishlist('Cooling Eye Pads')">Add to Wishlist</button>
+  <button onclick="addToCart('Cooling Eye Pads')">Add to Cart</button>
+</div>
+
+<!-- Product 7 -->
+<div class="product-card">
+  <img src="https://img.freepik.com/premium-photo/luxurious-liquid-foundation-splash_462685-50446.jpg?w=2000" alt="Foundation" />
+  <h2>Liquid Foundation</h2>
+  <p>🌟 Rating: 4.4/5</p>
+  <p>Price: ₹349</p>
+  <p>Ingredients: Vitamin E, SPF 20</p>
+  <button onclick="addToWishlist('Liquid Foundation')">Add to Wishlist</button>
+  <button onclick="addToCart('Liquid Foundation')">Add to Cart</button>
+</div>
+
+<!-- Product 8 -->
+<div class="product-card">
+  <img src="https://editorialist.com/wp-content/uploads/2022/02/4-Cle-De-Peau-Cream-Blush-PERFECT-PEACH.jpg" alt="Blush" />
+  <h2>Peach Blush</h2>
+  <p>🌟 Rating: 4.2/5</p>
+  <p>Price: ₹225</p>
+  <p>Ingredients: Minerals, Natural Tint</p>
+  <button onclick="addToWishlist('Peach Blush')">Add to Wishlist</button>
+  <button onclick="addToCart('Peach Blush')">Add to Cart</button>
+</div>
+
+<!-- Product 9 -->
+<div class="product-card">
+  <img src="https://saajkonna.com/wp-content/uploads/2022/01/Imagic-Face-Powder-Shade-4.jpg" alt="Compact Powder" />
+  <h2>Matte Compact Powder</h2>
+  <p>🌟 Rating: 4.5/5</p>
+  <p>Price: ₹199</p>
+  <p>Ingredients: Talc, Vitamin C</p>
+  <button onclick="addToWishlist('Matte Compact Powder')">Add to Wishlist</button>
+  <button onclick="addToCart('Matte Compact Powder')">Add to Cart</button>
+</div>
+
+<!-- Product 10 -->
+<div class="product-card">
+  <img src="https://static.beautytocare.com/media/catalog/product/cache/global/image/650x650/85e4522595efc69f496374d01ef2bf13/r/i/rimmel-london-glam-eyes-liquid-eyeliner-pitch-black-3-5ml.jpg" alt="Eyeliner" />
+  <h2>Black Liquid Eyeliner</h2>
+  <p>🌟 Rating: 4.6/5</p>
+  <p>Price: ₹175</p>
+  <p>Ingredients: Charcoal Pigment, Aloe Extract</p>
+  <button onclick="addToWishlist('Black Liquid Eyeliner')">Add to Wishlist</button>
+  <button onclick="addToCart('Black Liquid Eyeliner')">Add to Cart</button>
+</div>
+
+
+  </section>
+
+  <footer>
+    <p>© 2025 Beauty & Chocolate Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

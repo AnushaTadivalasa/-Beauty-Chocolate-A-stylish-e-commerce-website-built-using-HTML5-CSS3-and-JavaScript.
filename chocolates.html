@@ -1,0 +1,228 @@
+<!-- chocolates.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chocolates</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="chocolates-page">
+  <header>
+    <h1>Custom Chocolates 🍫🎁</h1>
+    <nav class="main-nav">
+      <a href="login.html">Home</a>
+      <a href="beauty.html">Beauty Products</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="thankyou.html">Transactions</a>
+    </nav>
+  </header>
+
+  <section class="product-grid">
+
+    <!-- Chocolate 1 -->
+    <div class="product-card">
+      <img src="https://images.uncommongoods.com/images/items/60900/60924_2_640px.jpg" alt="Custom Birthday Chocolate" />
+      <h2>Birthday Chocolate Box</h2>
+      <p>🌟 Rating: 4.9/5</p>
+      <p>Price: ₹499</p>
+      <p>Ingredients: Cocoa, Nuts, Cream</p>
+      
+      <!-- Customization -->
+      <label>Occasion:
+        <select>
+          <option>Birthday</option>
+          <option>Wedding</option>
+          <option>Anniversary</option>
+        </select>
+      </label>
+
+      <label>Chocolate Type:
+        <select>
+          <option>Milk</option>
+          <option>Dark</option>
+          <option>White</option>
+        </select>
+      </label>
+
+      <label>Upload Photo (optional):
+        <input type="file" accept="image/*">
+      </label>
+
+      <button onclick="addToWishlist('Birthday Chocolate Box')">Add to Wishlist</button>
+      <button onclick="addToCart('Birthday Chocolate Box')">Add to Cart</button>
+    </div>
+
+    <!-- Chocolate 2 -->
+    <div class="product-card">
+      <img src="https://cdn.notonthehighstreet.com/fs/27/49/fb21-03ac-4f73-be2c-ceb924dd3d5a/original_engagement-vegan-chocolate-bar-wedding-gift.jpg" alt="Wedding Chocolate" />
+      <h2>Wedding Special Chocolates</h2>
+      <p>🌟 Rating: 4.8/5</p>
+      <p>Price: ₹699</p>
+      <p>Ingredients: Cocoa Butter, Milk, Vanilla</p>
+      
+      <!-- Customization -->
+      <label>Occasion:
+        <select>
+          <option>Wedding</option>
+          <option>Birthday</option>
+          <option>Anniversary</option>
+        </select>
+      </label>
+
+      <label>Chocolate Type:
+        <select>
+          <option>White</option>
+          <option>Dark</option>
+          <option>Milk</option>
+        </select>
+      </label>
+
+      <label>Upload Photo (optional):
+        <input type="file" accept="image/*">
+      </label>
+
+      <button onclick="addToWishlist('Wedding Special Chocolates')">Add to Wishlist</button>
+      <button onclick="addToCart('Wedding Special Chocolates')">Add to Cart</button>
+    </div>
+
+    <!-- Chocolate 3 -->
+    <div class="product-card">
+      <img src="https://www.fnp.com/images/pr/l/v20201214212608/personalised-anniversary-chocolate-box-for-couple-18-pcs_1.jpg" alt="Anniversary Choco Gift" />
+      <h2>Anniversary Choco Gift</h2>
+      <p>🌟 Rating: 4.7/5</p>
+      <p>Price: ₹599</p>
+      <p>Ingredients: Caramel, Almond, Choco Chips</p>
+
+      <!-- Customization -->
+      <label>Occasion:
+        <select>
+          <option>Anniversary</option>
+          <option>Birthday</option>
+          <option>Wedding</option>
+        </select>
+      </label>
+
+      <label>Chocolate Type:
+        <select>
+          <option>Dark</option>
+          <option>Milk</option>
+          <option>White</option>
+        </select>
+      </label>
+
+      <label>Upload Photo (optional):
+        <input type="file" accept="image/*">
+      </label>
+
+      <button onclick="addToWishlist('Anniversary Choco Gift')">Add to Wishlist</button>
+      <button onclick="addToCart('Anniversary Choco Gift')">Add to Cart</button>
+    </div>
+    <!-- Chocolate 4 -->
+<div class="product-card">
+  <img src="https://i1.fnp.com/images/pr/l/v20211229183158/personalised-happy-birthday-chocolate-box_1.jpg" alt="Personalized Photo Chocolate" />
+  <h2>Photo Print Chocolate Bar</h2>
+  <p>🌟 Rating: 4.9/5</p>
+  <p>Price: ₹549</p>
+  <p>Ingredients: Rich Cocoa, Milk Solids, Edible Ink</p>
+
+  <!-- Customization -->
+  <label>Occasion:
+    <select>
+      <option>Birthday</option>
+      <option>Anniversary</option>
+      <option>Graduation</option>
+    </select>
+  </label>
+
+  <label>Chocolate Type:
+    <select>
+      <option>Milk</option>
+      <option>Dark</option>
+      <option>White</option>
+    </select>
+  </label>
+
+  <label>Upload Photo (required):
+    <input type="file" accept="image/*" required>
+  </label>
+
+  <button onclick="addToWishlist('Photo Print Chocolate Bar')">Add to Wishlist</button>
+  <button onclick="addToCart('Photo Print Chocolate Bar')">Add to Cart</button>
+</div>
+
+<!-- Chocolate 5 -->
+<div class="product-card">
+  <img src="https://shoprigidboxes.com/wp-content/uploads/2024/05/Truffle-Boxes_3.webp" alt="Luxury Truffle Box" />
+  <h2>Luxury Truffle Box</h2>
+  <p>🌟 Rating: 4.8/5</p>
+  <p>Price: ₹899</p>
+  <p>Ingredients: Belgian Cocoa, Cream, Hazelnuts</p>
+
+  <!-- Customization -->
+  <label>Occasion:
+    <select>
+      <option>Wedding</option>
+      <option>Birthday</option>
+      <option>Anniversary</option>
+    </select>
+  </label>
+
+  <label>Chocolate Type:
+    <select>
+      <option>Dark</option>
+      <option>Milk</option>
+    </select>
+  </label>
+
+  <label>Upload Photo (optional):
+    <input type="file" accept="image/*">
+  </label>
+
+  <button onclick="addToWishlist('Luxury Truffle Box')">Add to Wishlist</button>
+  <button onclick="addToCart('Luxury Truffle Box')">Add to Cart</button>
+</div>
+
+<!-- Chocolate 6 -->
+<div class="product-card">
+  <img src="https://i.etsystatic.com/6731788/r/il/b0a59e/2666215608/il_300x300.2666215608_ofss.jpg" alt="Chocolate Letter Gift" />
+  <h2>Custom Message Chocolates</h2>
+  <p>🌟 Rating: 4.6/5</p>
+  <p>Price: ₹479</p>
+  <p>Ingredients: Cocoa, Flavored Ganache, Nuts</p>
+
+  <!-- Customization -->
+  <label>Occasion:
+    <select>
+      <option>Birthday</option>
+      <option>Congrats</option>
+      <option>Valentine</option>
+    </select>
+  </label>
+
+  <label>Chocolate Type:
+    <select>
+      <option>Milk</option>
+      <option>Dark</option>
+      <option>White</option>
+    </select>
+  </label>
+
+  <label>Upload Photo (optional):
+    <input type="file" accept="image/*">
+  </label>
+
+  <button onclick="addToWishlist('Custom Message Chocolates')">Add to Wishlist</button>
+  <button onclick="addToCart('Custom Message Chocolates')">Add to Cart</button>
+</div>
+
+
+  </section>
+
+  <footer>
+    <p>© 2025 Beauty & Chocolate Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
